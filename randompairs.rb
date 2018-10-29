@@ -4,6 +4,8 @@ def create_random_pair(pair)
 	to_be_paired.each do |x|
 		if x.length == 2
 			ary.push(x)
+		else
+			ary[rand(ary.length)].concat(x)
 		end
 	end
 	return ary
