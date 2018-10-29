@@ -5,8 +5,10 @@ def create_random_pair(pair)
 		if x.length == 2
 			ary.push(x)
 		else
-			ary[rand(ary.length)].concat(x)
+			ary[0].push(x[0])
+			#ary[rand(ary.length)].concat(x)
 		end
 	end
+	p ary
 	return ary
 end
