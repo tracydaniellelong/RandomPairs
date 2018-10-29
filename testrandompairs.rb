@@ -16,6 +16,10 @@ class Testing < Minitest::Test
 	end
 	def test_pairs_with_9_names
 		pair = create_random_pair(["joe", "bob", "sally", "mary", "john", "kelly", "sam", "anna", "jane"])
-		assert_equal(2, pair.count)
+		assert_equal(4, pair.count)
+	end
+	def test_pairs_with_7_names
+		pair = create_random_pair(["joe", "bob", "mary", "john", "sam", "anna", "jane"])
+		assert_equal(3, pair.count)
 	end
 end
